@@ -1,5 +1,7 @@
 # Cole's Interview Prep
 
-[HTML Questions](HTML)
-[CSS Questions](CSS)
-[Javascript Questions](Javascript)
+[HTML Questions](HTML.md)
+
+[CSS Questions](CSS.md)
+
+[Javascript Questions](Javascript.md)
