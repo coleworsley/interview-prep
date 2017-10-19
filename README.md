@@ -1,3 +1,5 @@
 # Cole's Interview Prep
 
-[Javascript Exercises](js-assessment)
+[HTML Questions](HTML)
+[CSS Questions](CSS)
+[Javascript Questions](Javascript)
