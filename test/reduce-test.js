@@ -5,7 +5,7 @@ Array.prototype.myReduce = myReduce;
 describe('reduce', () => {
   it('should be an function', () => {
     expect(typeof(myReduce)).to.equal('function');
-  })
+  });
 
 
   it('should be able to sum up the elements in an array', () => {
@@ -32,7 +32,7 @@ describe('reduce', () => {
         type: 'yellow',
         count: 1
       }
-    ]
+    ];
 
     const newObj = array.myReduce((acc, e) => {
       if(!acc[e.type]) {
@@ -45,8 +45,8 @@ describe('reduce', () => {
     const answer = {
       green: 9,
       yellow: 1
-    }
+    };
 
     expect(newObj).to.deep.equal(answer);
-  })
-})
+  });
+});
