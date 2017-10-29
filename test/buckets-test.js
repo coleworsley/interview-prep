@@ -27,4 +27,15 @@ describe('Buckets', () => {
 
     expect(bucket.quantity).to.equal(3);
   });
+
+  it('should have a function to empty the bucket', () => {
+    const bucket = new Bucket(3);
+
+    expect(bucket.size).to.equal(3);
+    expect(bucket.quantity).to.equal(0);
+
+    bucket.fill();
+
+    expect(bucket.quantity).to.equal(3);
+  });
 });

@@ -10,6 +10,10 @@ class Bucket {
     this.size = size;
     this.quantity = 0;
   }
+
+  fill() {
+    this.quantity = this.size;
+  }
 }
 
 
