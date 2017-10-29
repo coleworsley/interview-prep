@@ -37,5 +37,9 @@ describe('Buckets', () => {
     bucket.fill();
 
     expect(bucket.quantity).to.equal(3);
+
+    bucket.empty();
+
+    expect(bucket.quantity).to.equal(0);
   });
 });
