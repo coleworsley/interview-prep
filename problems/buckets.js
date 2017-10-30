@@ -18,6 +18,23 @@ class Bucket {
   empty() {
     this.quantity = 0;
   }
+
+  transfer(bucket) {
+    let bucketOneQuantity = this.quantity;
+    let bucketTwoQuantity = bucket.quantity;
+    const totalFill = bucketOneQuantity + bucketTwoQuantity;
+
+    if (totalFill > bucket.size) {
+      bucketOneQuantity = bucket.size - bucket.quantity;
+      bucketTwoQuantity = bucket.size;
+    } else {
+      bucketOneQuantity = 0;
+      bucketTwoQuantity = this.quantity;
+    }
+
+    this.quantity = bucketOneQuantity
+    bucket.quantity = bucketTwoQuantity
+  }
 }
 
 

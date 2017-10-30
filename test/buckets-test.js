@@ -69,10 +69,12 @@ describe('Buckets', () => {
     bucket_two.fill();
 
     expect(bucket_two.quantity).to.equal(5);
+    expect(bucket_one.quantity + bucket_two.quantity).to.equal(5);
 
     bucket_two.transfer(bucket_one);
 
     expect(bucket_one.quantity).to.equal(3);
-    expect(bucket_one.quantity).to.equal(2);
+    expect(bucket_two.quantity).to.equal(2);
+    expect(bucket_one.quantity + bucket_two.quantity).to.equal(5);
   });
 });
