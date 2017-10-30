@@ -20,20 +20,15 @@ class Bucket {
   }
 
   transfer(bucket) {
-    let bucketOneQuantity = this.quantity;
-    let bucketTwoQuantity = bucket.quantity;
-    const totalFill = bucketOneQuantity + bucketTwoQuantity;
+    const diff = bucket.size - this.quantity - bucket.quantity;
 
-    if (totalFill > bucket.size) {
-      bucketOneQuantity = bucket.size - bucket.quantity;
-      bucketTwoQuantity = bucket.size;
+    if (diff > 0) {
+      bucket.quantity = this.quantity;
+      this.quantity = 0;
     } else {
-      bucketOneQuantity = 0;
-      bucketTwoQuantity = this.quantity;
+      this.quantity = -diff;
+      bucket.quantity = bucket.size;
     }
-
-    this.quantity = bucketOneQuantity
-    bucket.quantity = bucketTwoQuantity
   }
 }
 
