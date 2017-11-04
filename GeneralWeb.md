@@ -13,7 +13,7 @@
 ### Tell me two advantages of testing your code.
 
 1. Simplifies Integration of the application
-  - You'll know where the error is later by verifying the individual units
+    * You'll know where the error is later by verifying the individual units
 2. Identifies where code needs to be more modular
 3. Provides instant feedback to where your code is broken
 
