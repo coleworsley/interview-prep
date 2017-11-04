@@ -9,7 +9,7 @@
    * Make resource files
 5. Test the translations
 6. Deploy
-
+---
 ### Tell me two advantages of testing your code.
 
 1. Simplifies Integration of the application
