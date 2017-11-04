@@ -6,7 +6,7 @@
 2. Define the scope of localization (which parts of the application will need to change)
 3. Find someone to do the translations
 4. Internationalize - make it easy to localize
-  * Make resource files
+   * Make resource files
 5. Test the translations
 6. Deploy
 
@@ -33,8 +33,8 @@
 
 ### What factors influence whether you’ll take a progressive enhancement vs. graceful degradation approach to building an application?
 
-Graceful Degradation: modern browsers first
-Progressive Enhancement: base level first
+ Graceful Degradation: modern browsers first
+ Progressive Enhancement: base level first
 
 1. Target market -> Graceful Degradation can be sloppy on older browsers (will need to patch as errors come up)
 2. Time -> Typically it is easier to work with new technology
@@ -52,7 +52,7 @@ Controller - (API / Server) - Accepts inputs and converts it to commands for mod
 ### What does CORS stand for and what issue does it address?
 
 1. Prevents malicious scripts on one page from obtaining sensitive data from another
-* Origin is the combination of URI scheme and hostname and port
+   * Origin is the combination of URI scheme and hostname and port
 
 ### In as much detail as possible, describe the request-response cycle.
 
@@ -64,8 +64,8 @@ Controller - (API / Server) - Accepts inputs and converts it to commands for mod
 6. HTTP request is sent and received by web server
 7. Server checks for headers / method in request
 8. Server handles request
-  * If valid server sends a 200 response along with a body (likely an HTML page)
-  * If invalid server response with a 404 error message
+   * If valid server sends a 200 response along with a body (likely an HTML page)
+   * If invalid server response with a 404 error message
 9. Browser receives response and parses it to the DOM (assuming it is HTML)
 10. When external script/image/css/etc is parsed, a new request is made to serve those files
 11. Those external files are received, parsed, and executed
@@ -74,6 +74,4 @@ Controller - (API / Server) - Accepts inputs and converts it to commands for mod
 ### What is an API
 
 Application Programming Interface
-High Level - software intermediary/connection that allows two applications to talk to each other
-
-It is a set of protocols that 
+High Level - software intermediary/connection that allows two applications to talk to each other. It specifies how software should interact with each other.
