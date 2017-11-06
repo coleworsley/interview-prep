@@ -1,0 +1,1 @@
+In as much detail as possible, explain how JSON Web Tokens work.

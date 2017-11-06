@@ -1,6 +1,7 @@
 # CSS Questions and Answers
 
 ### Tell me 3 new features of CSS3.
+1. media queries
 
 ---
 ### Can you describe what responsive design is to you and how you would implement it?
