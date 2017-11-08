@@ -51,8 +51,11 @@ Controller - (API / Server) - Accepts inputs and converts it to commands for mod
 
 ### What does CORS stand for and what issue does it address?
 
-1. Prevents malicious scripts on one page from obtaining sensitive data from another
+1. Browser by default prevents malicious scripts on one page from obtaining sensitive data from another
    * Origin is the combination of URI scheme and hostname and port
+2. Without CORS, you can only access services from other domain via JSONP or server proxy.
+3. Mechanism that lets you access cross-domain resources with ajax
+
 
 ### In as much detail as possible, describe the request-response cycle.
 

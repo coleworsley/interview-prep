@@ -74,3 +74,30 @@ Disadvantages:
 Stack - function call is pushed to top of the stack (where in the program we are). Data structure that records function calls
 Heap - Memory allocation to Objects and Variables (unstructured)
 Callback Queue - Listens for events and pushes them to the call stack if theres space
+
+
+### What do you think of AMD vs CommonJS?
+AMD and CommonJS are both Javascript module loader. They accomplish the same task but works different.
+
+AMD utilizes require statements to build modules async
+
+
+### What's a typical use case for anonymous functions?
+Passing as an argument to another function or an IIFE
+
+
+### How do you organize your code? (module pattern, classical inheritance?)
+Modular pattern - reduce globally scoped variables
+Classical Inheritance - constructor function / childs prototype points to parent
+
+
+### What's the difference between host objects and native objects?
+Native objects: Object (constructor), Date, Math, parseInt, eval, string methods like indexOf and replace, array methods, ...
+
+Host objects (assuming browser environment): window, document, location, history, XMLHttpRequest, setTimeout, getElementsByTagName, querySelectorAll, ...
+
+
+### What's the difference between feature detection, feature inference, and using the UA string?
+Feature detection: detecting if a feature exists in the browser(geolocation)
+Feature Inference: if a feature is detected it assumes the next tech is there as well
+UA String: User Agent String - a string text of data with information about the browser environment
